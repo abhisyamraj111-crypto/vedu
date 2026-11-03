@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff2ed">
+  <meta name="description" content="You're invited to a sweet little celebration for Vedanth A. on 12 November 2026.">
+  <meta property="og:title" content="A Sweet Little Celebration — Vedanth A.">
+  <meta property="og:description" content="Join us to celebrate our little prince, Vedanth A.">
+  <meta property="og:type" content="website">
+  <title>A Sweet Little Celebration | Vedanth A.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261104-4">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="floating-animals" id="floatingAnimals" aria-hidden="true"></div>
+  <main>
+    <section class="cover" id="cover" aria-labelledby="cover-title">
+      <div class="corner-flower flower-one" aria-hidden="true">✿</div>
+      <div class="corner-flower flower-two" aria-hidden="true">❀</div>
+      <div class="sparkles" aria-hidden="true"></div>
+      <img class="cover-photo" src="assets/vedanth-cover.jpg" alt="Vedanth smiling outdoors in a hooded jacket" fetchpriority="high">
+      <div class="cover-inner">
+        <p class="eyebrow reveal">A little moment to cherish</p>
+        <div class="tiny-rule reveal"><span>✧</span></div>
+        <h1 id="cover-title" class="shimmer reveal">You're Invited to a<br><em>Sweet Little Celebration</em></h1>
+        <p class="cover-note reveal">A magical day, made sweeter with you.</p>
+        <button class="open-button tap-button reveal" id="openInvite" type="button" aria-label="Tap to open a message from Vedu">
+          <span class="message-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H9l-5.5 3v-3.3A1.5 1.5 0 0 1 2.5 17V7A1.5 1.5 0 0 1 4 5.5Z"/><path d="m4 7 8 6 8-6"/></svg></span>
+          <span class="open-button-copy"><span class="open-button-label">A Message From Vedu</span><small>Tap to Open</small></span>
+          <span class="button-arrow tap-finger" aria-hidden="true">☝︎</span>
+        </button>
+        <div class="scroll-hint reveal" aria-hidden="true"><span></span> A little magic awaits</div>
+      </div>
+      <div class="cover-bottom">MADE WITH LOVE <span>✦</span> FOR OUR LITTLE PRINCE</div>
+    </section>
+
+    <div id="invitation" class="invitation hidden" aria-hidden="true">
+      <audio id="birthdayMusic" src="assets/kunjikkavil-meghame.mp3" preload="auto" loop></audio>
+      <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="Play birthday music">
+        <span class="music-toggle-icon" aria-hidden="true">♫</span><span class="music-toggle-label">Play Music</span>
+      </button>
+      <nav class="floating-nav" aria-label="Invitation sections">
+        <a href="#details">Invite</a><a href="#countdown">Countdown</a><a href="#gallery">Memories</a><a href="#wishes">Wishes</a>
+      </nav>
+      <section class="details section" id="details">
+        <div class="section-flower" aria-hidden="true">❀</div>
+        <p class="eyebrow">With hearts full of joy</p>
+        <h2 class="invitation-title">A Little Joy, A Lot of Love</h2>
+        <p class="invitation-message">From tiny hands, bright eyes and a love bigger than we ever imagined. Please join our family for an evening of celebration and birthday wishes as our dear Vedu turns one.</p>
+        <div class="ornament"><span>✦</span><i></i><span>♡</span><i></i><span>✦</span></div>
+        <h3 class="baby-name">Vedanth’s Birthday</h3>
+        <p class="little-prince">A magical day filled with love, laughter and beautiful memories.</p>
+        <div class="event-reveal" id="eventReveal">
+          <button class="event-reveal-tab tap-button" id="revealEventDetails" type="button" aria-expanded="false" aria-controls="eventDetails">
+            <span class="reveal-tap-icon" aria-hidden="true"><span class="tap-halo"></span><span class="tap-halo tap-halo-late"></span><span class="reveal-tap-dot">♡</span></span><span><strong>Tap to reveal</strong><small>Date, time &amp; venue</small></span>
+          </button>
+          <div class="event-details-content" id="eventDetails" aria-hidden="true">
+            <div class="detail-grid">
+          <div class="detail-item"><span class="detail-icon calendar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3.5" y="5.5" width="17" height="15" rx="2.5"></rect><path d="M7.5 3.5v4M16.5 3.5v4M3.5 10h17M8 14h2M14 14h2M8 17h2"></path></svg></span><span class="detail-label">DATE</span><strong>12 November 2026</strong></div>
+          <div class="detail-item"><span class="detail-icon">◷</span><span class="detail-label">TIME</span><strong>6:00 PM</strong></div>
+          <div class="detail-item venue-item"><span class="detail-icon">⌖</span><span class="detail-label">VENUE</span><strong>Nallezhuthu Aruna, Nallezhuthu Jn, Chavara, Kollam</strong></div>
+            </div>
+            <button class="event-details-back" id="hideEventDetails" type="button">Hide event details</button>
+          </div>
+        </div>
+        <a class="gold-button directions-button" href="https://www.google.com/maps/search/?api=1&amp;query=Nallezhuthu+Aruna%2C+Nallezhuthu+Jn%2C+Chavara%2C+Kollam" target="_blank" rel="noopener noreferrer" aria-label="Open Nallezhuthu Aruna, Nallezhuthu Jn, Chavara, Kollam in Google Maps for directions">Get Directions <span aria-hidden="true">↗</span></a>
+        <div class="invite-actions" aria-label="Invitation actions">
+          <button class="action-button" id="saveDate" type="button"><span aria-hidden="true">♡</span><span><strong>Save the Date</strong><small>Add to your calendar</small></span></button>
+          <button class="action-button" id="shareInvite" type="button"><span aria-hidden="true">↗</span><span><strong>Share Invite</strong><small>Send to family & friends</small></span></button>
+        </div>
+        <p class="action-feedback" id="actionFeedback" role="status" aria-live="polite"></p>
+        <p class="invitation-foot">Your presence will make our day more beautiful.</p>
+      </section>
+
+      <section class="countdown-section section" id="countdown">
+        <div class="countdown-light-effects" aria-hidden="true">
+          <span class="light-orb light-orb-one"></span>
+          <span class="light-orb light-orb-two"></span>
+          <span class="light-orb light-orb-three"></span>
+          <span class="light-orb light-orb-four"></span>
+          <span class="light-pop light-pop-one">✦</span>
+          <span class="light-pop light-pop-two">✧</span>
+          <span class="light-pop light-pop-three">✦</span>
+        </div>
+        <div class="section-topline">THE BIG DAY IS ALMOST HERE</div>
+        <h2>Counting every <em>little moment</em></h2>
+        <p class="section-subtitle">Until we celebrate our favourite little star.</p>
+        <div class="countdown-date-pill"><span aria-hidden="true">✧</span> THURSDAY · 12 NOVEMBER 2026 · 6:00 PM <span aria-hidden="true">✧</span></div>
+        <div class="floating-balloon-scene" aria-hidden="true">
+          <span class="decor-balloon pastel-balloon gold-balloon balloon-a"></span>
+          <span class="decor-balloon pastel-balloon black-balloon balloon-b"></span>
+          <span class="decor-balloon pastel-balloon gold-balloon balloon-c"></span>
+          <span class="decor-balloon pastel-balloon black-balloon balloon-d"></span>
+          <span class="decor-balloon pastel-balloon gold-balloon balloon-e"></span>
+          <span class="decor-balloon pastel-balloon black-balloon balloon-f"></span>
+          <span class="decor-balloon pastel-balloon gold-balloon balloon-g"></span>
+          <span class="decor-balloon pastel-balloon black-balloon balloon-h"></span>
+          <span class="balloon-twinkle twinkle-a">✦</span><span class="balloon-twinkle twinkle-b">✧</span>
+        </div>
+        <div class="countdown" id="countdownClock" aria-label="Time remaining until the birthday">
+          <div class="time-card"><strong id="days">--</strong><span>DAYS</span></div>
+          <div class="time-card"><strong id="hours">--</strong><span>HOURS</span></div>
+          <div class="time-card"><strong id="minutes">--</strong><span>MINUTES</span></div>
+          <div class="time-card"><strong id="seconds">--</strong><span>SECONDS</span></div>
+        </div>
+        <div id="birthdayMessage" class="birthday-message hidden">Today is all about you, Vedanth! <span>♡</span></div>
+        <p class="countdown-note">A little countdown to a lifetime of lovely memories</p>
+        <div class="countdown-actions">
+          <button class="gold-button" id="saveDateCountdown" type="button">♡ &nbsp; Save the Date</button>
+          <button class="outline-button" id="shareInviteCountdown" type="button">↗ &nbsp; Share Invite</button>
+        </div>
+      </section>
+
+      <section class="gallery-section section" id="gallery">
+        <p class="eyebrow">Tiny toes, endless love</p>
+        <h2>Little Moments,<br><em>Big Memories</em></h2>
+        <p class="section-subtitle">A little gallery of the sweetest days.</p>
+        <div class="photo-grid" id="photoGrid">
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-01.jpg" aria-label="Open family photo of Vedanth outdoors"><img src="assets/photos/vedanth-memory-01.jpg" alt="Vedanth with his parents outdoors" loading="lazy"><span class="photo-label">Together is our favourite place</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-02.jpg" aria-label="Open photo of Vedanth in traditional clothes"><img src="assets/photos/vedanth-memory-02.jpg" alt="Vedanth smiling in traditional clothes" loading="lazy"><span class="photo-label">Our little sunshine</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-03.jpg" aria-label="Open baby photo of Vedanth"><img src="assets/photos/vedanth-memory-03.jpg" alt="Baby Vedanth resting in a blanket" loading="lazy"><span class="photo-label">The beginning of everything</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-04.jpg" aria-label="Open smiling photo of Vedanth"><img src="assets/photos/vedanth-memory-04.jpg" alt="Vedanth smiling at a family celebration" loading="lazy"><span class="photo-label">Little moments, big smiles</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-05.jpg" aria-label="Open photo of Vedanth on the steps"><img src="assets/photos/vedanth-memory-05.jpg" alt="Vedanth sitting on outdoor steps" loading="lazy"><span class="photo-label">Adventures with Vedu</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-06.jpg" aria-label="Open family selfie with Vedanth"><img src="assets/photos/vedanth-memory-06.jpg" alt="Abhi, Anju and baby Vedanth together" loading="lazy"><span class="photo-label">Our growing family</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-07.jpg" aria-label="Open photo of Vedanth in a blue sweater"><img src="assets/photos/vedanth-memory-07.jpg" alt="Vedanth in a blue and white sweater" loading="lazy"><span class="photo-label">Every day, a new joy</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-08.jpg" aria-label="Open photo of Vedanth with a football"><img src="assets/photos/vedanth-memory-08.jpg" alt="Vedanth smiling with a football" loading="lazy"><span class="photo-label">A little football fan</span></button>
+          <button class="photo-card" type="button" data-photo="assets/vedanth-cover.jpg" aria-label="Open cover photo of Vedanth outdoors"><img src="assets/vedanth-cover.jpg" alt="Vedanth smiling in his hooded jacket outdoors" loading="lazy"><span class="photo-label">Our favourite little face</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-09.jpeg" aria-label="Open photo of Vedanth reaching for festive lights"><img src="assets/photos/vedanth-memory-09.jpeg" alt="Vedanth reaching up toward warm festive lights" loading="lazy"><span class="photo-label">Reaching for the little lights</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-10.jpeg" aria-label="Open photo of Vedanth enjoying colourful festive lights"><img src="assets/photos/vedanth-memory-10.jpeg" alt="Vedanth looking up at colourful festive lights" loading="lazy"><span class="photo-label">A world full of wonder</span></button>
+          <button class="photo-card" type="button" data-photo="assets/photos/vedanth-memory-11.jpeg" aria-label="Open smiling portrait of Vedanth"><img src="assets/photos/vedanth-memory-11.jpeg" alt="Vedanth smiling in his green outfit under soft lights" loading="lazy"><span class="photo-label">That lovely little smile</span></button>
+        </div>
+        <p class="photo-note">Swipe or scroll to see more favourite moments with our little star.</p>
+      </section>
+
+      <section class="wishes-section section" id="wishes">
+        <div class="wishes-card">
+          <div class="wishes-flower" aria-hidden="true">✿</div>
+          <p class="eyebrow">A little love goes a long way</p>
+          <h2>Send Your Love<br><em>&amp; Blessings</em></h2>
+          <p class="wishes-intro">Make Vedanth's special day even more magical. Leave a little wish for our little prince!</p>
+          <form id="wishForm" novalidate>
+            <label for="guestName">Your name</label>
+            <input id="guestName" name="guestName" type="text" maxlength="60" placeholder="e.g. Anu aunty" required autocomplete="name">
+            <label for="wishMessage">Your birthday wish</label>
+            <textarea id="wishMessage" name="wishMessage" rows="4" maxlength="500" placeholder="Write a little blessing for Vedanth…" required></textarea>
+            <div class="form-meta"><span id="formError" class="form-error" role="alert"></span><span id="charCount">0 / 500</span></div>
+            <button class="gold-button send-button" id="sendWish" type="submit">Send Wishes <span>♡</span></button>
+            <p class="storage-note" id="storageNote">Wishes are saved in this browser's local demo.</p>
+          </form>
+          <div class="success-message hidden" id="successMessage" role="status">Your lovely wish has been added. Thank you! <span>♡</span></div>
+          <div class="wish-list-wrap">
+            <div class="wish-list-heading"><span>Little notes of love</span><span class="wish-count" id="wishCount">0 wishes</span></div>
+            <div id="wishList" class="wish-list"><div class="empty-wishes"><span>♡</span><p>The first little wish is waiting to be written.</p></div></div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer"><div class="footer-heart">♡</div><p>With love, Abhi &amp; Anju, for our Vedu</p><span>12 · 11 · 2026</span></footer>
+    </div>
+  </main>
+
+  <button class="back-top hidden" id="backTop" aria-label="Back to top" type="button">♡</button>
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="closeLightbox" aria-label="Close photo viewer">×</button>
+    <img id="lightboxImage" src="" alt="Expanded memory">
+  </div>
+  <dialog class="calendar-prompt" id="calendarPrompt" aria-labelledby="calendarPromptTitle">
+    <div class="calendar-prompt-card">
+      <button class="calendar-prompt-close" type="button" id="closeCalendarPrompt" aria-label="Close calendar options">×</button>
+      <span class="calendar-prompt-icon" aria-hidden="true">▣</span>
+      <h2 id="calendarPromptTitle">Save Vedanth’s birthday?</h2>
+      <p>Choose your calendar app. On your phone, select Calendar from the share sheet.</p>
+      <button class="gold-button calendar-choice" id="deviceCalendarOption" type="button">Choose Calendar App</button>
+      <button class="outline-button calendar-choice" id="googleCalendarOption" type="button">Google Calendar</button>
+      <button class="calendar-file-option" id="downloadCalendarOption" type="button">Download .ics file</button>
+    </div>
+  </dialog>
+  <script src="app.js?v=20261104-4"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
